@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>NOTA</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        <div>Show Input</div>
+        <hr>
+        <tr> 
+            <th> Nama Bunga : </th><td th:text="${Name}"></td></br>
+            <th> Harga Bunga : </th><td th:text="${Price}"></td></br>
+            <th> Jumlah Bunga : </th><td th:text="${Quantity}"></td></br>
+            <th> Total : </th><td th:text="${Total}"></td></br>
+            
+            <th> Mendapatkan diskon sebesar </th><td th:text="${Diskon}"></td></br>
+        </tr>
+<!--        <p th:text="${Name}"></p>
+        <p th:text="${Price}"></p>
+        <p th:text="${Quantity}"></p>-->
+
+    </body>
+</html>
