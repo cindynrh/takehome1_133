@@ -9,21 +9,43 @@ and open the template in the editor.
         <title>NOTA</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <style>
+            .footer {
+            position: fixed;
+            left: 0;
+            bottom: 0;
+            width: 100%;
+            background-color: #395144;
+            color: white;
+            text-align: center;
+            }
+        </style>
     </head>
     <body>
         <div>Show Input</div>
         <hr>
-        <tr> 
-            <th> Nama Bunga : </th><td th:text="${Name}"></td></br>
-            <th> Harga Bunga : </th><td th:text="${Price}"></td></br>
-            <th> Jumlah Bunga : </th><td th:text="${Quantity}"></td></br>
-            <th> Total : </th><td th:text="${Total}"></td></br>
+     
             
-            <th> Mendapatkan diskon sebesar </th><td th:text="${Diskon}"></td></br>
-        </tr>
-<!--        <p th:text="${Name}"></p>
-        <p th:text="${Price}"></p>
-        <p th:text="${Quantity}"></p>-->
+                <tr> 
+                    <th> Nama Bunga : </th><td th:text="${Name}"></td></br>
+                    <th> Harga Bunga : </th><td th:text="${Price}"></td></br>
+                    <th> Jumlah Bunga : </th><td th:text="${Quantity}"></td></br>
+                    <th> Total : </th><td th:text="${Total}"></td></br>
+
+                    <th> Mendapatkan diskon sebesar </th><td th:text="${Diskon}"></td></br>
+                    
+                </tr>
+                
+            <div class="footer">
+                <p>Cindy Nurhabibah </p>
+                <p>20200140133 </p>
+            </div>
+               
+        <!--        <p th:text="${Name}"></p>
+                <p th:text="${Price}"></p>
+                <p th:text="${Quantity}"></p>-->
+        
+        
 
     </body>
 </html>
