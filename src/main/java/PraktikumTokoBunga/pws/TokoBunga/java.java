@@ -35,20 +35,20 @@ public class java {
         Double PriceTotal = iPrice * iTotal;
         Double getTotal = null;
         
-        if (PriceTotal < 20000)
+        if (PriceTotal < 10000)
         {
             getTotal = PriceTotal - (0 * PriceTotal/100);
             diskon = "0%";
         }
-        else if (PriceTotal >= 20000 && PriceTotal < 30000)
+        else if (PriceTotal >= 10000 && PriceTotal < 50000)
         {
-            getTotal = PriceTotal - (10 * PriceTotal/100);
-            diskon = "10%";
+            getTotal = PriceTotal - (5 * PriceTotal/100);
+            diskon = "5%";
         }
-        else if (PriceTotal >= 30000)
+        else if (PriceTotal >= 50000)
         {
-            getTotal =PriceTotal - (15 * PriceTotal/100);
-            diskon ="15%";
+            getTotal =PriceTotal - (10 * PriceTotal/100);
+            diskon ="10%";
         }
         
         discountprocess.addAttribute("Name", inputname);
